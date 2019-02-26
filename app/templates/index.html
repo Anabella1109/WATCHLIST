@@ -28,23 +28,24 @@
             </form>
         
         </div>
+        <div class="row">
 
 <!-- Popular movie -->
-<h3> Popular Movies</h3>
+<h3 class="col-md-12"> Popular Movies</h3>
 <ul>
     {{ macro.displayMovieList(popular)}}
-</ul>
+</ul><br>
 <!-- Upcoming movie  -->
-<h3> Upcoming Movies </h3>
+<h3 class="col-md-12"> Upcoming Movies </h3>
 <ul>
     {{ macro.displayMovieList(upcoming)}}
-</ul>
+</ul><br>
 <!-- Now showing movie -->
-<h3>Now Showing</h3>
+<h3 class="col-md-12">Now Showing</h3>
 <ul>
     {{ macro.displayMovieList(now_showing)}}
 </ul>
-
+</div>
 
 {% endblock%}
 
